@@ -6,3 +6,6 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# Mac Files
+.DS_Store
