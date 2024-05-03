@@ -1,0 +1,23 @@
+name: xq-snowflake-examples
+channels:
+  - https://repo.anaconda.com/pkgs/snowflake
+  - nodefaults
+dependencies:
+  - python=3.10
+  - snowflake-snowpark-python
+  - pip
+  - openssl=1.1.1
+  - cython
+  - pip:
+      # Python Dotenv
+      - python-dotenv
+      # Pandas
+      - snowflake-snowpark-python[pandas]
+      # Snowflake
+      - snowflake-cli-labs==0.2.9
+      # XQ
+      - git+ssh://git@github.com/XQ-Message-Inc/python-sdk.git@main#egg=xq-sdk
+      # Faker
+      - faker
+      # Concurrent Futures
+      - futures
